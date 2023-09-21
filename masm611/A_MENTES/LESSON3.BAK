@@ -1,0 +1,27 @@
+.MODEL SMALL
+
+.STACK
+
+.CODE
+main proc
+  CALL read_char
+  CALL write_char
+  MOV AH,4Ch
+  INT 21H
+main endp
+read_char proc
+  PUSH AX
+  MOV AH, I
+  INT 21h
+  MOV DL,AL
+  POP AX
+  RET
+read_char endp
+write_char proc
+  PUSH AX
+  MOV AH,2
+  INT 21h
+  POP AX
+  RET
+write_char endp
+END Lesson3
