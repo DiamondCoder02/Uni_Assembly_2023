@@ -1,0 +1,120 @@
+.MODEL SMALL
+.STACK
+.CODE
+CR EQU 13
+LF EQU 10
+cr_lf proc
+    PUSH DX
+    MOV DL, CR
+    CALL write_char
+    MOV DL, LF
+    CALL write_char
+    POP DX
+    RET
+cr_lf endp
+
+read_char proc
+    PUSH AX
+    MOV AH, 1
+    INT 21h
+    MOV DL, AL
+    POP AX
+    RET
+read_char endp
+
+write_char proc
+    PUSH AX
+    MOV AH, 2
+    INT 21h
+    POP AX
+    RET
+write_char endp
+
+write_binary proc
+    PUSH BX
+    PUSH CX
+    PUSH DX
+    MOV BL, DL
+    MOV CX, 8
+    binary_digit:
+    XOR DL, DL
+    RCL BL, 1
+    ADC DL, "0"
+    CALL write_char
+    LOOP binary_digit
+    POP DX
+    POP CX
+    POP BX
+    RET
+write_binary endp
+
+write_hexa proc
+    PUSH CX
+    PUSH DX
+    MOV DH, DL
+    MOV CL, 4
+    SHR DL, CL
+    CALL write_hexa_digit
+    MOV DL, DH
+    AND DL, 0Fh
+    CALL write_hexa_digit
+    POP DX
+    POP CX
+    RET
+write_hexa endp
+
+write_hexa_digit proc
+    PUSH DX
+    CMP DL, 10
+    JB non_hexa_letter
+    ADD DL, "A"-"0"-10
+non_hexa_letter:
+    ADD DL, "0"
+    CALL write_char
+    POP DX
+    RET
+write_hexa_digit endp
+
+write_decimal proc
+    PUSH AX
+    PUSH CX
+    PUSH DX
+    PUSH SI
+    XOR DH, DH
+    MOV AX, DX
+    MOV SI, 10
+    XOR CX, CX
+decimal_non_zero:
+    XOR DX, DX
+    DIV SI
+    PUSH DX
+    INC CX
+    OR AX, AX
+    JNE decimal_non_zero
+decimal_loop:
+    POP DX
+    CALL write_hexa_digit
+    LOOP decimal_loop
+    POP SI
+    POP DX
+    POP CX
+    POP AX
+    RET
+write_decimal endp
+
+main proc
+    CALL read_char
+    XOR DH, DH
+    CALL cr_lf
+    CALL write_binary
+
+    CALL cr_lf
+    CALL write_decimal
+
+    CALL cr_lf
+    CALL write_hexa
+
+    MOV AH,4CH
+    INT 21h
+main endp
+END main
