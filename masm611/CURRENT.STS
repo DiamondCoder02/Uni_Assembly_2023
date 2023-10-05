@@ -1,11 +1,11 @@
 PWB-GENERATED FILE: DO NOT MODIFY
 [shared-]
 	version=3
-	pmark="C:\A_MENTES\Lesson4_.ASM" 64 16
+	pmark="C:\A_MENTES\LESSON5\TEST4.ASM" 13 26
 	project=""
 	buildmode=0
 [edit-]
-	file="C:\A_MENTES\Lesson4_.ASM" 45 1 64 16
+	file="C:\A_MENTES\LESSON5\TEST4.ASM" 1 1 13 26
 	srch=
 	fSrchRe=0
 	rpl=
@@ -16,7 +16,7 @@ PWB-GENERATED FILE: DO NOT MODIFY
 	winstyle=7
 	wnd=R 1 0 23 79 0 0
 	file="<COMPILE>Build Results" 1 1 1 1
-	wnd=r 13 0 36 80 20 4
+	wnd=c 13 0 36 80 20 4
 	file="<SEARCH>Search Results" 1 1 1 1
 	wnd=c 0 0 0 0 0 0
 	file="<PRINT>Print Results" 1 1 1 1
@@ -25,7 +25,7 @@ PWB-GENERATED FILE: DO NOT MODIFY
 	wnd=c 0 0 0 0 0 0
 	file="<CLIPBOARD>Clipboard" 1 1 1 1
 	wnd=c 0 0 0 0 0 0
-	file="<pwbhelp>Help: Register Summary" 1 1 1 1
+	file="<pwbhelp>Help" 1 1 1 1
 	wnd=c 1 0 11 80 0 0
 	file="<browse>Browser Output" 1 1 1 1
 	wnd=c 0 0 0 0 0 0
@@ -88,7 +88,7 @@ PWB-GENERATED FILE: DO NOT MODIFY
     build: message "^[^(]+(\\(\\:p\\)) : [^L]+L[124]" file
     build: message "^LINK [^L]+L[124]"
     build: message "^ILINK : [^L]+L[124]"
-    build: message "Rebuild all" file line
+    build: message "Build all" file line
     build: message "^NMAKE : [^U]+U[124]"
     build: message "^\\:p : [^U]+U[124]\\:d\\:d\\:d"
     build: message "^\\(\\:p\\)(\\([0-9]+\\))[ \t]*:[ \t]*[^A]+A[12456]" file line
@@ -105,4 +105,34 @@ PWB-GENERATED FILE: DO NOT MODIFY
     build: message "^LIB :"
     build: message "^MPC :"
     build: message "^CVPACK :"
+    build: message "Compile TEST4.ASM" file line
     build: message "Rebuild all" file line
+    build: message "Compile A_MENTES\\LESSON5\\TEST1.ASM" file line
+    build: message "Compile TEST1.ASM" file line
+
+[debug-]
+	target="c:\a_mentes\lesson5\test1.exe"
+	synonym=;C:\A_MENTES\LESSON5
+[cv]
+	wndstate=0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1
+	wndstate=1 80 5 0 1 0 1 0 0 0 0 0 0 0 -1
+	wndstate=2 34 4 33 1 0 0 0 0 0 0 0 0 0 -1
+	wndstate=3 80 13 0 6 1 1 0 0 0 8 8 0 0 -1
+	wndstate=4 67 7 3 8 0 0 0 0 0 0 0 0 0 -1
+	wndstate=5 67 4 0 12 0 0 0 0 0 0 0 0 0 -1
+	wndstate=6 67 4 3 15 0 0 0 0 0 0 0 0 0 -1
+	wndstate=7 13 23 67 1 0 0 0 0 0 0 0 0 0 -1
+	wndstate=8 67 4 0 16 0 0 0 0 0 0 0 0 0 -1
+	wndstate=9 80 5 0 19 0 1 0 1 0 2 0 0 0 -1
+	command=use auto
+	command=n10
+	screensize=25
+	command=oh+
+	command=ov+
+	command=oa+
+	command=vs1
+	command=oc+
+	command=of+
+	command=o3-
+	command=ollf   
+	tracespeed=250

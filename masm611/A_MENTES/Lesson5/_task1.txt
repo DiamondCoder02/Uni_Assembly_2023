@@ -1,0 +1,21 @@
+1. Olvasson be két darab bájtos értéket, adja össze azokat, 
+majd az eredményt írja ki a képernyőre.
+
+2. Olvasson be két bináris számot, végezze el az AND műveltet, 
+majd az eredményt írja ki a képernyőre.
+
+3. Alakítsa át a Read_hexa szubrutint úgy, 
+hogy csak a tizenhatos számrendszernek megfelelő karaktereket fogadja el.
+
+4. Alakítsa át a Read_char szubrutint úgy, 
+hogy az ESC (27 kód) leütésére kilépjen a programból.
+
+5. Írja ki a képernyőre (egymás alá) a nagybetű karaktereket.
+
+6. Írja ki a képernyőre (egymás alá) a szám karakterek ASCII kódját.
+
+7. Írja ki a képernyőre (egymás alá) a kisbetűk ASCII kódját
+
+8. Írja ki a képernyőre (egymás alá) a szám karaktereket.
+
+9. A programok írásához használja a már megírt szubrutinokat!

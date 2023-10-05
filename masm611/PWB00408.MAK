@@ -1,7 +1,7 @@
 ORIGIN = PWB
 ORIGIN_VER = 2.1.49
-PROJ = Lesson4_
-PROJFILE = ..\PWB00408.mak
+PROJ = TEST4
+PROJFILE = ..\..\PWB00408.mak
 BUILDDIR = .
 DEBUG = 0
 
@@ -24,9 +24,9 @@ SBRPACK  = sbrpack
 NMAKEBSC1  = set
 NMAKEBSC2  = nmake
 
-FILES  = Lesson4_.ASM
-OBJS  = .\Lesson4_.obj
-SBRS  = .\Lesson4_.sbr
+FILES  = TEST4.ASM
+OBJS  = .\TEST4.obj
+SBRS  = .\TEST4.sbr
 
 all: .\$(PROJ).exe
 
@@ -34,18 +34,18 @@ all: .\$(PROJ).exe
 .SUFFIXES:
 .SUFFIXES: .obj .sbr .asm
 
-.\Lesson4_.obj : Lesson4_.ASM
+.\TEST4.obj : TEST4.ASM
 !IF $(DEBUG)
-	$(ASM) /c $(AFLAGS_G) $(AFLAGS_D) /Fo.\Lesson4_.obj Lesson4_.ASM
+	$(ASM) /c $(AFLAGS_G) $(AFLAGS_D) /Fo.\TEST4.obj TEST4.ASM
 !ELSE
-	$(ASM) /c $(AFLAGS_G) $(AFLAGS_R) /Fo.\Lesson4_.obj Lesson4_.ASM
+	$(ASM) /c $(AFLAGS_G) $(AFLAGS_R) /Fo.\TEST4.obj TEST4.ASM
 !ENDIF
 
-.\Lesson4_.sbr : Lesson4_.ASM
+.\TEST4.sbr : TEST4.ASM
 !IF $(DEBUG)
-	$(ASM) /Zs $(AFLAGS_G) $(AFLAGS_D) /FR.\Lesson4_.sbr Lesson4_.ASM
+	$(ASM) /Zs $(AFLAGS_G) $(AFLAGS_D) /FR.\TEST4.sbr TEST4.ASM
 !ELSE
-	$(ASM) /Zs $(AFLAGS_G) $(AFLAGS_R) /FR.\Lesson4_.sbr Lesson4_.ASM
+	$(ASM) /Zs $(AFLAGS_G) $(AFLAGS_R) /FR.\TEST4.sbr TEST4.ASM
 !ENDIF
 
 
