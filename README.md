@@ -29,3 +29,7 @@ SET TMP=C:\
 
 C:\BINR\PWB.EXE
 ```
+
+### quotes from me
+
+- ```A jó büdős kurva anyát ennek a faszópó geciládának hogy nem tud normálisan tanítani aztán még senki sem szereti hogy esne le a lépcsőn a halálba```
