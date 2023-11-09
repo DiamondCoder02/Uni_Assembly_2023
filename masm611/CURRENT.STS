@@ -1,11 +1,11 @@
 PWB-GENERATED FILE: DO NOT MODIFY
 [shared-]
 	version=3
-	pmark="C:\A_MENTES\LESSON8\LESSON82.ASM" 1 1
+	pmark="C:\A_MENTES\LESSON~2\KOVACS1.ASM" 1 1
 	project=""
 	buildmode=0
 [edit-]
-	file="C:\A_MENTES\LESSON8\LESSON82.ASM" 1 1 1 1
+	file="C:\A_MENTES\LESSON~2\KOVACS1.ASM" 1 1 1 1
 	srch=
 	fSrchRe=0
 	rpl=
@@ -14,8 +14,8 @@ PWB-GENERATED FILE: DO NOT MODIFY
 [pwb]
 	screen=25 80
 	winstyle=7
-	wnd=R 1 0 22 78 0 0
-	file="<COMPILE>Build Results" 1 1 1 1
+	wnd=R 1 0 24 80 0 0
+	file="<COMPILE>Build Results" 8 1 8 1
 	wnd=c 16 0 24 80 0 0
 	file="<SEARCH>Search Results" 1 1 1 1
 	wnd=c 0 0 0 0 0 0
@@ -105,7 +105,9 @@ PWB-GENERATED FILE: DO NOT MODIFY
     build: message "^LIB :"
     build: message "^MPC :"
     build: message "^CVPACK :"
+    build: message "Build all" file line
+    build: message "Compile KOVACS1.ASM" file line
+    build: message "Rebuild all" file line
     build: message "Compile LESSON81.ASM" file line
     build: message "Compile A_MENTES\\LESSON8\\LESSON81.ASM" file line
-    build: message "Rebuild all" file line
     build: message "Compile LESSON8_.ASM" file line
