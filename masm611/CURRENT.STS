@@ -1,11 +1,11 @@
 PWB-GENERATED FILE: DO NOT MODIFY
 [shared-]
 	version=3
-	pmark="C:\A_MENTES\LESSON~2\KOVACS1.ASM" 1 1
+	pmark="C:\A_MENTES\LESSON~2\KOVACS2.ASM" 1 1
 	project=""
 	buildmode=0
 [edit-]
-	file="C:\A_MENTES\LESSON~2\KOVACS1.ASM" 1 1 1 1
+	file="C:\A_MENTES\LESSON~2\KOVACS2.ASM" 1 1 1 1
 	srch=
 	fSrchRe=0
 	rpl=
@@ -14,8 +14,8 @@ PWB-GENERATED FILE: DO NOT MODIFY
 [pwb]
 	screen=25 80
 	winstyle=7
-	wnd=R 1 0 24 80 0 0
-	file="<COMPILE>Build Results" 8 1 8 1
+	wnd=R 2 1 24 80 0 0
+	file="<COMPILE>Build Results" 1 1 1 1
 	wnd=c 16 0 24 80 0 0
 	file="<SEARCH>Search Results" 1 1 1 1
 	wnd=c 0 0 0 0 0 0
